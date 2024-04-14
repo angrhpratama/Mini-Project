@@ -3,19 +3,19 @@
 import { Flex } from "@chakra-ui/layout"
 
 function Footer() {
-  return (
+    return (
 
-<Flex
-padding='100px'
-color='white'
-bg='black'
->
+        <Flex
+            padding='100px'
+            color='white'
+            bg='black'
+        >
 
-abc
+            abc
 
-</Flex>
-  
-)
+        </Flex>
+
+    )
 }
 
 export default Footer

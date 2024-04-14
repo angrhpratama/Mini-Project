@@ -22,13 +22,14 @@ export default function Navbar() {
       <Box ml='50px'>
         <InputGroup>
           <InputLeftElement pointerEvents="none"
-            children={<SearchIcon color="grey" padding="12px" w='14px' />} />
+            children={<SearchIcon color="grey" w='15px' ml='10' />} />
+          <Search2Icon />
           <Input
-          bg='white'
+            bg='white'
             w='600px'
             h='40px'
             type='search'
-            color='grey.700'
+            color='grey'
             fontSize='medium'
             placeholder='Search by artist, event or venue' padding="0 45px" />
         </InputGroup>
@@ -38,19 +39,19 @@ export default function Navbar() {
         ml='110px'>
 
         <ButtonGroup gap='2'>
-          <Button color='white' bgColor='black'  variant='outline'>
+          <Button color='white' bgColor='black' variant='outline'>
             Ticket
           </Button>
-          
-          <Button color='white' bgColor='black'  variant='outline' >
+
+          <Button color='white' bgColor='black' variant='outline' >
             Create Event
           </Button>
-          
-          <Button color='white' bgColor='black'  variant='outline' >
+
+          <Button color='white' bgColor='black' variant='outline' >
             Log in
           </Button>
 
-          
+
         </ButtonGroup>
 
 
