@@ -8,6 +8,7 @@ import Events from "./events/events";
 import Footer from "./components/footer";
 import Swipe from "./components/swiper"
 
+
 export default function Home() {
   return (
     <div>

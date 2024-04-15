@@ -2,6 +2,7 @@
 
 import { Search2Icon, SearchIcon } from '@chakra-ui/icons'
 import { Box, Button, ButtonGroup, Center, Flex, Icon, IconButton, Image, Input, InputGroup, InputLeftElement, MenuButton, Spacer } from '@chakra-ui/react'
+import Link from 'next/link'
 import React from 'react'
 
 export default function Navbar() {
@@ -13,10 +14,12 @@ export default function Navbar() {
       p='20px'>
 
       <Box ml='70px'>
+        <Link href="/">
         <Image
           w='135px'
           h='50px'
           src='https://res.cloudinary.com/dhioc6nup/image/upload/v1713109589/mini%20project/yahmax8x0aq3sf9zj7ya.png' alt='Gambar Logo' />
+        </Link>
       </Box>
 
       <Box ml='50px'>
@@ -42,9 +45,11 @@ export default function Navbar() {
             Ticket
           </Button>
 
+        <Link href="/create-event">
           <Button color='white' bgColor='black' variant='outline' >
             Create Event
           </Button>
+        </Link>
 
           <Button color='white' bgColor='black' variant='outline' >
             Log in
