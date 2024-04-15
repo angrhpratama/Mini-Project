@@ -9,11 +9,7 @@ function Hero() {
 
         <>
 
-            hadeeeh
-
-            slide using swiper
-
-            meledak kepala bjir
+            Test Update
 
             <hr />
 
