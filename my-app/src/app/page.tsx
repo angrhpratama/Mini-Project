@@ -7,6 +7,7 @@ import Hero from "./hero/hero";
 import Events from "./events/events";
 import Footer from "./components/footer";
 import Swipe from "./components/swiper"
+import Swipe2 from "./components/swipe";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Swipe />
+      <Swipe2 />
       <Events />
       <Footer />
 

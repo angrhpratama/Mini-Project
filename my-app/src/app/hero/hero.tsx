@@ -9,10 +9,6 @@ function Hero() {
 
         <>
 
-            Test Update
-
-            <hr />
-
         </>
 
     )
