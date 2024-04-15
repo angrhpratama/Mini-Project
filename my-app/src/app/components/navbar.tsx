@@ -22,8 +22,7 @@ export default function Navbar() {
       <Box ml='50px'>
         <InputGroup>
           <InputLeftElement pointerEvents="none"
-            children={<SearchIcon color="grey" w='15px' ml='10' />} />
-          <Search2Icon />
+            children={<SearchIcon color="grey" w='15px' />} />
           <Input
             bg='white'
             w='600px'
@@ -31,7 +30,7 @@ export default function Navbar() {
             type='search'
             color='grey'
             fontSize='medium'
-            placeholder='Search by artist, event or venue' padding="0 45px" />
+            placeholder='Search by artist, event or venue' padding="0 40px" />
         </InputGroup>
       </Box>
 
