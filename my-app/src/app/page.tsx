@@ -6,6 +6,7 @@ import { SearchIcon } from "@chakra-ui/icons";
 import Hero from "./hero/hero";
 import Events from "./events/events";
 import Footer from "./components/footer";
+import Swipe from "./components/swiper"
 
 export default function Home() {
   return (
@@ -14,9 +15,9 @@ export default function Home() {
 
       <Navbar />
       <Hero />
+      <Swipe />
       <Events />
       <Footer />
-
 
 
 
