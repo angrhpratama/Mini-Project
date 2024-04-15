@@ -4,29 +4,7 @@ import React from 'react';
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import { Box, Text } from '@chakra-ui/layout';
-import { Input, AspectRatio, BoxProps, Container, forwardRef, Heading, Stack, Divider } from '@chakra-ui/react';
-
-const PreviewImage = forwardRef<BoxProps, typeof Box>((props, ref) => {
-    return (
-      <Box
-        bg="white"
-        top="0"
-        height="100%"
-        width="100%"
-        position="absolute"
-        borderWidth="1px"
-        borderStyle="solid"
-        rounded="sm"
-        borderColor="gray.400"
-        backgroundSize="cover"
-        backgroundRepeat="no-repeat"
-        backgroundPosition="center"
-        backgroundImage={`url("https://image.shutterstock.com/image-photo/paella-traditional-classic-spanish-seafood-600w-1662253543.jpg")`}
-        {...props}
-        ref={ref}
-      />
-    );
-  });
+import { Input, AspectRatio, Container, Heading, Stack, Divider } from '@chakra-ui/react';
 
 
 export default function CreateEvent() {
@@ -78,12 +56,6 @@ export default function CreateEvent() {
                     spacing="4"
                     >
 
-                    <Box height="16" width="12" position="relative">
-                     <PreviewImage  
-                    backgroundImage="url('https://image.shutterstock.com/image-photo/paella-traditional-classic-spanish-seafood-600w-1662253543.jpg')"
-                     />
-                     </Box>
-
                     <Stack p="8" textAlign="center" spacing="1">
                     <Heading fontSize="lg" color="gray.700" fontWeight="bold">
                     Drop images here
@@ -92,7 +64,7 @@ export default function CreateEvent() {
                     </Stack>
 
                  </Stack>
-                 </Box>
+                    </Box>
 
                     <Input
                     type="file"
@@ -105,16 +77,16 @@ export default function CreateEvent() {
                     aria-hidden="true"
                     accept="image/*"
                     />
+                    </Box>
                 </Box>
-            </Box>
-        </AspectRatio>
-    </Container>    
+            </AspectRatio>
+        </Container>    
     
                     <Divider />
 
                 <Text mt={3}  >Date and Time</Text>
-</Box>
-</Container>
+            </Box>
+        </Container>
 
         </>
     )
