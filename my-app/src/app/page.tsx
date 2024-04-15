@@ -17,7 +17,6 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Swipe />
-      <Swipe2 />
       <Events />
       <Footer />
 
