@@ -1,7 +1,7 @@
 'use client'
 
 import { Search2Icon, SearchIcon } from '@chakra-ui/icons'
-import { Box, Button, ButtonGroup, Center, Flex, Icon, IconButton, Image, Input, InputGroup, InputLeftElement, MenuButton, Spacer } from '@chakra-ui/react'
+import { Box, Button, ButtonGroup, Center, Flex, Icon, IconButton, Image, Input, InputGroup, InputLeftElement, MenuButton, Spacer, Avatar } from '@chakra-ui/react'
 import Link from 'next/link'
 import React from 'react'
 
@@ -55,7 +55,9 @@ export default function Navbar() {
             Log in
           </Button>
 
-
+          <Link href='/profile'> 
+            <Avatar src='https://bit.ly/broken-link' />
+          </Link>
         </ButtonGroup>
 
 
