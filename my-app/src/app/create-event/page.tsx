@@ -4,9 +4,11 @@ import React, { ChangeEvent } from 'react';
 import Navbar from "../components/navbar";
 import { Box, Text } from '@chakra-ui/layout';
 import { Input, AspectRatio, Container, Heading, Stack, Divider,
-        FormControl, FormLabel, FormErrorMessage, FormHelperText, } from '@chakra-ui/react';
+        FormControl, FormLabel, FormErrorMessage, FormHelperText, Flex, 
+        Checkbox, CheckboxGroup, Button } from '@chakra-ui/react';
 import Footer from '../components/footer';
 import { useState } from 'react';
+import Datepicker from '../components/datepicker';
 
 
 export default function CreateEvent() {
@@ -54,87 +56,89 @@ export default function CreateEvent() {
         <>
         <Navbar />
 
-        <Container centerContent mt={3}>
-            
-            <Box mt={3} ml={5}>
-                <Text mt={3} fontSize="xl">Create Event</Text>
+            <Box mt='3' ml='20'>
+                <Text as='b' mt={3} fontSize="xl">Create Event</Text>
 
-            <Divider />
+                <Divider />
 
-            <FormControl isRequired>
-                <FormLabel mt={3}>Event Name</FormLabel>
-                <Input  placeholder='Give your event a name' 
+                <FormControl isRequired>
+                    <FormLabel mt={3}>Event Name</FormLabel>
+                    <Input  placeholder='Give your event a name' 
                         size='sm' 
-                        width='100%' 
+                        width='50%' 
                         value={eventName} 
                         onChange={handleEventNameChange}
                         />
                 
-                {!isEventNameError ? (
-                    ''
-                ) : (
-                    <Text color="red" fontSize="sm">{eventNameErrorMessage}</Text>
-                )}
-            </FormControl>
+                    {!isEventNameError ? (
+                        ''
+                    ) : (
+                        <Text color="red" fontSize="sm">{eventNameErrorMessage}</Text>
+                    )}
+                </FormControl>
 
-            <FormControl isRequired>
-                <Text mt={3}>Event Description</Text>
-                <Input  placeholder='Describe your event briefly' 
+                <FormControl isRequired>
+                    <Text mt={3}>Event Description</Text>
+                    <Input  placeholder='Describe your event briefly' 
                         size='sm' 
-                        width='100%'
+                        width='50%'
                         value={eventDescription}
                         onChange={handleEventDescriptionChange}
                         />
-                {!isEventDescriptionError ? (
-                    ''
-                ) : (
-                    <Text color="red" fontSize="sm">{eventDescriptionErrorMessage}</Text>
-                )}
-            </FormControl>
+                    {!isEventDescriptionError ? (
+                        ''
+                    ) : (
+                        <Text color="red" fontSize="sm">{eventDescriptionErrorMessage}</Text>
+                    )}
+                </FormControl>
 
-            <Divider mt={3}/>
+                <Divider mt={3}/>
 
-                <Text mt={3} fontSize="xl">Location</Text>
+                    <Text as='b' mt={3} fontSize="lg">Location</Text>
 
-            <FormControl>
-                <Text mt={3} >City</Text>
-                <Input placeholder='Name a city in Indonesia' 
+                <FormControl>
+                    <Text mt={3} >City</Text>
+                    <Input placeholder='Name a city in Indonesia' 
                        size='sm' 
-                       width='100%'
+                       width='50%'
                        value={city}
                        onChange={handleCityChange}
                        />
-                {!isCityError ? (
-                    ''
-                ) : (
-                    <Text color="red" fontSize="sm">{cityErrorMessage}</Text>
-                )
-                }
-            </FormControl>
+                    {!isCityError ? (
+                        ''
+                    ) : (
+                        <Text color="red" fontSize="sm">{cityErrorMessage}</Text>
+                    )
+                    }
+                </FormControl>
 
-                <Text mt={3}>Address</Text>
+                    <Text mt={3}>Address</Text>
 
-            <FormControl>
-                <Input  placeholder='Specify the address of the location' 
+                <FormControl>
+                    <Input  placeholder='Specify the address of the location' 
                         size='sm' 
-                        width='100%' 
+                        width='50%' 
                         value={address}
                         onChange={handleAddressChange}
                         />
-                {!isAddressError ? (
+                    {!isAddressError ? (
                     ''
-                ) : (
-                    <Text color="red" fontSize="sm">{addressErrorMessage}</Text>
-                )
-                }
-            </FormControl>
+                    ) : (
+                        <Text color="red" fontSize="sm">{addressErrorMessage}</Text>
+                    )
+                    }
+                </FormControl>
 
-                <Text mt={3}  >Upload Image</Text>
-                
+                    <Divider mt='3' />
+
+                    <Box mt='5'>
+                    <Text as='b' fontSize='lg' >Upload Image</Text>
+                    </Box>
+
                 <Container my="3" display="flex" justifyContent="left">
                     <AspectRatio width="64" ratio={1}>
-                    <Box
-                    borderColor="gray.300"
+                        <Box
+                        borderColor="gray.300"
                     borderStyle="dashed"
                     borderWidth="2px"
                     rounded="md"
@@ -143,37 +147,37 @@ export default function CreateEvent() {
                     transition="all 150ms ease-in-out"
                     _hover={{
                         shadow: "md"
-                    }}
-                    >
-                    <Box position="relative" height="100%" width="100%">
+                        }}
+                        >
+                        <Box position="relative" height="100%" width="100%">
                     
-                <Box
-                    position="absolute"
-                    top="0"
-                    left="0"
-                    height="100%"
-                    width="100%"
-                    display="flex"
-                    flexDirection="column"
-                    >
+                    <Box
+                        position="absolute"
+                        top="0"
+                        left="0"
+                        height="100%"
+                        width="100%"
+                        display="flex"
+                        flexDirection="column"
+                        >
                     
-                <Stack
-                    height="100%"
-                    width="100%"
-                    display="flex"
-                    alignItems="center"
-                    justify="center"
-                    spacing="4"
-                    >
+                    <Stack
+                        height="100%"
+                        width="100%"
+                        display="flex"
+                        alignItems="center"
+                        justify="center"
+                        spacing="4"
+                        >
 
-                    <Stack p="8" textAlign="center" spacing="1">
-                    <Heading fontSize="lg" color="gray.700" fontWeight="bold">
+                        <Stack p="8" textAlign="center" spacing="1">
+                            <Heading fontSize="lg" color="gray.700" fontWeight="bold">
                     Drop images here
-                    </Heading>
-                    <Text fontWeight="light">or click to upload</Text>
-                    </Stack>
+                            </Heading>
+                            <Text fontWeight="light">or click to upload</Text>
+                        </Stack>
 
-                 </Stack>
+                    </Stack>
                     </Box>
 
                     <Input
@@ -189,16 +193,39 @@ export default function CreateEvent() {
                     />
                     </Box>
                 </Box>
-            </AspectRatio>
-        </Container>    
-    
-                    <Divider />
-
-                <Text mt={3}  >Date and Time</Text>
+                </AspectRatio>
+             </Container>    
             </Box>
-        </Container>
+            <Divider />
 
-                    {/* <Footer /> */}
+        <Box mt='5' ml='20'>
+                <Text as='b' fontSize='lg' >Event Date</Text>
+        </Box>
+
+    <Flex ml='20' mb='3'>
+        <FormControl mt='2' mb='3'>
+            <Text mt={3}  >Event Start Date</Text>
+                <Datepicker />
+            <Text mt='3'  >Event End Date</Text>
+                <Datepicker />
+
+                <FormHelperText>Maximum for Start and End Date is 1 year from today</FormHelperText>
+        </FormControl>
+
+    </Flex>
+
+    <Divider mb='3' />
+
+    <Box ml='20' mb='3'>
+        <Text as='b' fontSize='lg'>Promotion</Text>
+        <FormControl>
+            <Checkbox mt='3'>Discount Voucher</Checkbox>
+        </FormControl>
+    </Box>
+
+    <Button mt= '3' mb='3' ml='20'>Submit Event</Button>
+
+                    <Footer />
         </>
     )
 }
