@@ -1,6 +1,6 @@
 'use client'
 
-import { Box, Center, Divider, Heading, SimpleGrid, Stack, Text } from "@chakra-ui/layout"
+import { Box, Center, Divider, HStack, Heading, SimpleGrid, Stack, Text, VStack } from "@chakra-ui/layout"
 import { Button, ButtonGroup, Card, CardBody, CardFooter } from "@chakra-ui/react"
 import Image from "next/image"
 
@@ -27,12 +27,9 @@ function Events() {
                             alt='picture'
                         />
                         <Stack mt='6' spacing='3'>
-                            <Heading size='md'>Title of event</Heading>
-                            <Text>
-                                description of festival
-                            </Text>
-                            <Text color='blue.600' fontSize='2xl'>
-                                price
+                            <Heading size='md'>Lagipula Hidup Akan Berakhir</Heading>
+                            <Text color='chocolate' fontSize='2xl'>
+                                Rp. 200.000
                             </Text>
                         </Stack>
                     </CardBody>
@@ -57,11 +54,8 @@ function Events() {
                         />
                         <Stack mt='6' spacing='3'>
                             <Heading size='md'>Title of event</Heading>
-                            <Text>
-                                description of festival
-                            </Text>
-                            <Text color='blue.600' fontSize='2xl'>
-                                price
+                            <Text color='chocolate' fontSize='2xl'>
+                                Rp. 500.000
                             </Text>
                         </Stack>
                     </CardBody>
@@ -89,8 +83,8 @@ function Events() {
                             <Text>
                                 description of festival
                             </Text>
-                            <Text color='blue.600' fontSize='2xl'>
-                                price
+                            <Text color='chocolate' fontSize='2xl'>
+                                Rp. 150.000
                             </Text>
                         </Stack>
                     </CardBody>
@@ -118,8 +112,8 @@ function Events() {
                             <Text>
                                 description of festival
                             </Text>
-                            <Text color='blue.600' fontSize='2xl'>
-                                price
+                            <Text color='chocolate' fontSize='2xl'>
+                                Rp. 100.000
                             </Text>
                         </Stack>
                     </CardBody>
@@ -148,9 +142,14 @@ function Events() {
                             <Text>
                                 description of festival
                             </Text>
-                            <Text color='blue.600' fontSize='2xl'>
-                                price
-                            </Text>
+                            <VStack alignItems='left'>
+                                <Text color='grey'>
+                                    start from
+                                </Text>
+                                <Text color='chocolate' fontSize='2xl'>
+                                    Rp. 100.000
+                                </Text>
+                            </VStack>
                         </Stack>
                     </CardBody>
                     <Divider />
@@ -177,9 +176,14 @@ function Events() {
                             <Text>
                                 description of festival
                             </Text>
-                            <Text color='blue.600' fontSize='2xl'>
-                                price
-                            </Text>
+                            <VStack alignItems='left'>
+                                <Text color='grey'>
+                                    start from
+                                </Text>
+                                <Text color='chocolate' fontSize='2xl'>
+                                    Rp. 80.000
+                                </Text>
+                            </VStack>
                         </Stack>
                     </CardBody>
                     <Divider />
@@ -207,9 +211,14 @@ function Events() {
                             <Text>
                                 description of festival
                             </Text>
-                            <Text color='blue.600' fontSize='2xl'>
-                                price
-                            </Text>
+                            <VStack alignItems='left'>
+                                <Text color='grey'>
+                                    start from
+                                </Text>
+                                <Text color='chocolate' fontSize='2xl'>
+                                    Rp. 50.000
+                                </Text>
+                            </VStack>
                         </Stack>
                     </CardBody>
                     <Divider />
@@ -237,8 +246,8 @@ function Events() {
                             <Text>
                                 description of festival
                             </Text>
-                            <Text color='blue.600' fontSize='2xl'>
-                                price
+                            <Text color='green' fontSize='2xl'>
+                                Free
                             </Text>
                         </Stack>
                     </CardBody>
@@ -257,14 +266,14 @@ function Events() {
                 </Card>
             </SimpleGrid>
             <Center>
-                <Button 
-                bg='black'
-                color='white'
-                colorScheme='yellow' 
-                variant='solid' 
-                mb='20'
-                w='150px'
-                
+                <Button
+                    bg='black'
+                    color='white'
+                    colorScheme='yellow'
+                    variant='solid'
+                    mb='20'
+                    w='150px'
+
                 >
                     Load More
                 </Button>

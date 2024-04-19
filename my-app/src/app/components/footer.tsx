@@ -19,23 +19,27 @@ function Footer() {
 
 
             <HStack gap='40' >
-                <Box>
-                    <Heading size='sm'>
-                        Tentang
-                    </Heading>
                     <List mr='15' spacing='5'>
-                        <li>
+                    <Heading size='sm'>
+                        TENTANG
+                    </Heading>
+                        <ListItem>
                             Tentang Kami
-                        </li>
-                        <li>
+                        </ListItem>
+                        <ListItem>
                             Blogs
-                        </li>
+                        </ListItem>
+                        <ListItem>
+                            Tim Kami
+                        </ListItem>
+                        <ListItem>
+                            Kebijakan Privasi
+                        </ListItem>
                     </List>
-                </Box>
 
                 <List spacing='5'>
                     <Heading size='sm'>
-                        Genre
+                        GENRE
                     </Heading>
                     <ListItem>
                         Jazz
@@ -54,7 +58,7 @@ function Footer() {
 
                 <List spacing='5'>
                     <Heading size='sm'>
-                        Informasi
+                        INFORMASI
                     </Heading>
                     <ListItem>
                         Syarat & Ketentuan
@@ -72,7 +76,7 @@ function Footer() {
 
                 <List spacing='5'>
                     <Heading size='sm'>
-                        Penyelenggara
+                        PENYELENGGARA
                     </Heading>
                     <ListItem>
                         Daftar
@@ -82,6 +86,9 @@ function Footer() {
                     </ListItem>
                     <ListItem>
                         Creator
+                    </ListItem>
+                    <ListItem>
+                        Mitra Kami
                     </ListItem>
                 </List>
 
