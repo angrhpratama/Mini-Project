@@ -1,8 +1,8 @@
 'use client'
 
-import { Search2Icon, SearchIcon } from '@chakra-ui/icons'
-import { Box, Button, ButtonGroup, Center, Flex, Icon, IconButton, Image, Input, InputGroup, InputLeftElement, MenuButton, Spacer } from '@chakra-ui/react'
-import Link from 'next/link'
+import { LinkIcon, Search2Icon, SearchIcon } from '@chakra-ui/icons'
+import { Avatar, Box, Button, ButtonGroup, Center, Divider, Flex, Icon, IconButton, Image, Input, InputGroup, InputLeftElement, Link, LinkBox, MenuButton, Spacer } from '@chakra-ui/react'
+
 import React from 'react'
 
 export default function Navbar() {
@@ -13,12 +13,12 @@ export default function Navbar() {
       bg='black'
       p='20px'>
 
-      <Box ml='70px'>
+      <Box ml='100px'>
         <Link href="/">
-        <Image
-          w='135px'
-          h='50px'
-          src='https://res.cloudinary.com/dhioc6nup/image/upload/v1713109589/mini%20project/yahmax8x0aq3sf9zj7ya.png' alt='Gambar Logo' />
+          <Image
+            w='135px'
+            h='50px'
+            src='https://res.cloudinary.com/dhioc6nup/image/upload/v1713109589/mini%20project/yahmax8x0aq3sf9zj7ya.png' alt='Gambar Logo' />
         </Link>
       </Box>
 
@@ -38,28 +38,37 @@ export default function Navbar() {
       </Box>
 
       <Box
-        ml='110px'>
+        ml='110'>
 
         <ButtonGroup gap='2'>
           <Button color='white' bgColor='black' variant='outline'>
             Ticket
           </Button>
 
-        <Link href="/create-event">
-          <Button color='white' bgColor='black' variant='outline' >
-            Create Event
-          </Button>
-        </Link>
+
+          <Link href="/create-event">
+            <Button color='white' bgColor='black' variant='outline' >
+              Create Event
+            </Button>
+          </Link>
 
           <Button color='white' bgColor='black' variant='outline' >
             Log in
           </Button>
-
-
         </ButtonGroup>
-
-
       </Box>
+
+      <Center height='50px'>
+        <Divider ml='5' orientation='vertical' />
+      </Center>
+
+      <Link href='/profile' >
+        <Avatar
+          ml='5'
+          size='sm'
+          src='https://bit.ly/broken-link' />
+      </Link>
+
 
     </Flex >
 

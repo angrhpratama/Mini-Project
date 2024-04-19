@@ -1,14 +1,15 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import butterflyImg from "../assets/butterfly.jpeg";
 import 'swiper/css';
 
 import slide1 from "../assets/hindia.webp"
-import slide2 from "../assets/nosstress.jpg"
-import slide3 from "../assets/oasis.jpg"
+import slide2 from "../assets/oasis.jpg"
+import slide3 from "../assets/1.webp"
+import slide4 from "../assets/2.jpg"
+import slide5 from "../assets/2.webp"
+import slide6 from "../assets/3.webp"
+import slide7 from "../assets/4.jpg"
+import slide8 from "../assets/5.jpg"
 import Image from 'next/image';
-
-
-
 
 
 
@@ -16,13 +17,13 @@ export default function Swipe() {
   return (
 
     <Swiper
-      spaceBetween={50}
-      slidesPerView={3}
+      spaceBetween={20}
+      slidesPerView={2.5}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
-      
-      <SwiperSlide >
+
+      <SwiperSlide>
         <Image
           src={slide1}
           alt='/'
@@ -30,27 +31,73 @@ export default function Swipe() {
           height={400}
           style={{ margin: "30px" }}
         />
-        </SwiperSlide>
-      
+      </SwiperSlide>
+
       <SwiperSlide>
         <Image src={slide2}
           alt='/'
           width={1700}
           style={{ margin: "30px" }}
         />
-       </SwiperSlide>
-      
+      </SwiperSlide>
+
       <SwiperSlide>
-      <Image src={slide3}
+        <Image src={slide3}
           alt='/'
           width={1000}
           height={400}
           style={{ margin: "30px" }}
         />
-       </SwiperSlide>
+      </SwiperSlide>
       
-      <SwiperSlide>Slide 4</SwiperSlide>
-      ...
+      <SwiperSlide>
+        <Image src={slide4}
+          alt='/'
+          width={1000}
+          height={400}
+          style={{ margin: "30px" }}
+        />
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <Image src={slide5}
+          alt='/'
+          width={1000}
+          height={400}
+          style={{ margin: "30px" }}
+        />
+      </SwiperSlide>
+      
+      <SwiperSlide>
+        <Image src={slide6}
+          alt='/'
+          width={1000}
+          height={400}
+          style={{ margin: "30px" }}
+        />
+      </SwiperSlide>
+      
+      <SwiperSlide>
+        <Image src={slide7}
+          alt='/'
+          width={1000}
+          height={400}
+          style={{ margin: "30px" }}
+        />
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <Image src={slide8}
+          alt='/'
+          width={1000}
+          height={400}
+          style={{ margin: "30px" }}
+        />
+      </SwiperSlide>
+
+      
+
+
     </Swiper>
   );
 };
