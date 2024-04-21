@@ -1,7 +1,7 @@
 'use client'
 
 import { Search2Icon, SearchIcon } from '@chakra-ui/icons'
-import { Box, Button, ButtonGroup, Center, Flex, Icon, IconButton, Image, Input, InputGroup, InputLeftElement, MenuButton, Spacer, Avatar } from '@chakra-ui/react'
+import { Box, Button, ButtonGroup, Center, Flex, Icon, IconButton, Image, Input, InputGroup, InputLeftElement, MenuButton, Spacer, Avatar, Divider } from '@chakra-ui/react'
 import Link from 'next/link'
 import React from 'react'
 
@@ -40,10 +40,14 @@ export default function Navbar() {
       <Box
         ml='110'>
 
+        
         <ButtonGroup gap='2'>
+
+          <Link href='/tickets'>
           <Button color='white' bgColor='black' variant='outline'>
-            Ticket
+            Tickets
           </Button>
+          </Link>
 
         <Link href="/create-event">
           <Button color='white' bgColor='black' variant='outline' >

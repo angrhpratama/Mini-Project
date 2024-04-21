@@ -3,7 +3,7 @@ import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 import logo from '../assets/mp logo.png'
 import { Box, Center, Container, Divider, HStack, Heading, Link, Stack, Text } from '@chakra-ui/layout'
-import { Button, Checkbox, FormControl, FormLabel, Input } from '@chakra-ui/react'
+import { Button, Checkbox, FormControl, FormLabel, Input, Flex, Avatar } from '@chakra-ui/react'
 import Image from 'next/image'
 
 
@@ -14,55 +14,93 @@ export default function Profile() {
 
             <Navbar />
 
-            <Container maxW="lg" py={{ base: '12', md: '24' }} px={{ base: '0', sm: '8' }}>
-                <Stack spacing="8">
-                    <Stack spacing="6">
-                        <Center>
-                            <Image src={logo} width='70' alt='logo' />
-                        </Center>
-                        <Stack spacing={{ base: '2', md: '3' }} textAlign="center">
-                            <Heading size={{ base: 'xs', md: 'sm' }}>Log in to your account</Heading>
-                            <Text color="fg.muted">
-                                Don't have an account? <Link href="#">Sign up</Link>
-                            </Text>
-                        </Stack>
-                    </Stack>
-                    <Box
-                        py={{ base: '0', sm: '8' }}
-                        px={{ base: '4', sm: '10' }}
-                        bg={{ base: 'transparent', sm: 'bg.surface' }}
-                        boxShadow={{ base: 'none', sm: 'md' }}
-                        borderRadius={{ base: 'none', sm: 'xl' }}
-                    >
-                        <Stack spacing="6">
-                            <Stack spacing="5">
-                                <FormControl>
-                                    <FormLabel htmlFor="email">Email</FormLabel>
-                                    <Input id="email" type="email" />
-                                </FormControl>
-                            </Stack>
-                            <HStack justify="space-between">
-                                <Checkbox defaultChecked>Remember me</Checkbox>
-                                <Button variant="text" size="sm">
-                                    Forgot password?
-                                </Button>
-                            </HStack>
-                            <Stack spacing="6">
-                                <Button>Sign in</Button>
-                                <HStack>
-                                    <Divider />
-                                    <Text textStyle="sm" whiteSpace="nowrap" color="fg.muted">
-                                        or continue with
-                                    </Text>
-                                    <Divider />
-                                </HStack>
-                            </Stack>
-                        </Stack>
-                    </Box>
-                </Stack>
-            </Container>
+            <Flex ml='10' mt='10' mb='10' >
+                <Box ml='100' borderWidth='1px' borderRadius='lg' pt='10px' pl='100px' pr='100px' pb='80px'>
+                    <Center>
+                        <Avatar 
+                        
+                        size='xl'
+                        src='https://bit.ly/broken-link' />
+                        
+                    </Center>
 
-            profile
+                    <Center>
+                        <Text fontSize='lg' mt='3' as='b'>John Doe</Text> 
+                    </Center>
+
+                    <Center>
+                        <Text fontSize='sm' mt='3'>Jakarta, Indonesia</Text>
+                    </Center>
+
+                    <Center>
+                        <Text as='i' fontSize='xs' mt='3'>Joined March 2024</Text>
+                    </Center>
+
+
+                    <Box borderWidth='1px' borderRadius='lg' mt='40px' pl='10px' pr='10px' pb='10px'>
+
+                    <Center>
+                        <Text as='b' fontSize='sm' mt='4' textColor='green'>Redeemed Points</Text>
+                    </Center>
+
+                    <Center>
+                        <Text fontSize='sm' mt='1' textColor='green'>10,000</Text>
+                    </Center>
+
+                    </Box>
+
+                </Box>
+
+                <Box ml='50px' mr='100px' borderWidth='1px' borderRadius='lg' pt='10px' pl='20px' pr='20px' pb='80px' width="40%">
+
+                <Flex flexDirection="column" alignItems="flex-start">
+                    <Flex justifyContent="space-between" width="100%">
+                        <Text fontSize='md' mt='1'>Full Name</Text> 
+                        <Text fontSize='sm' mt='1.5' ml='auto' textAlign='right' textColor='grey'>John Doe</Text> 
+                    </Flex>
+
+                    <Divider/>
+
+                    <Flex justifyContent="space-between" width="100%">
+                        <Text fontSize='md' mt='3'>Gender</Text> 
+                        <Text fontSize='sm' mt='3.5' ml='auto' textAlign='right' textColor='grey'>Male</Text> 
+                    </Flex>
+
+                    <Divider/>
+
+                    <Flex justifyContent="space-between" width="100%">
+                        <Text fontSize='md' mt='3'>Email</Text> 
+                        <Text fontSize='sm' mt='3.5' ml='auto' textAlign='right' textColor='grey'>johndoe@gmail.com</Text> 
+                    </Flex>
+
+                    <Divider/>
+
+                    <Flex justifyContent="space-between" width="100%">
+                        <Text fontSize='md' mt='3'>Phone</Text> 
+                        <Text fontSize='sm' mt='3.5' ml='auto' textAlign='right' textColor='grey'>+62 813 4567 8910</Text> 
+                    </Flex>
+
+                    <Divider/>
+
+                    <Flex justifyContent="space-between" width="100%">
+                        <Text fontSize='md' mt='3'>Address</Text> 
+                        <Text fontSize='sm' mt='3.5' ml='auto' textAlign='right' textColor='grey'>Jl. Veteran Raya No. 18C</Text> 
+                    </Flex>
+
+                </Flex>
+
+                <Divider />
+                    
+                    <Center mt='30px'>
+                        <Button fontSize='sm'>Edit Profile</Button>
+                    </Center>
+
+                    <Center mt='30px'>
+                        <Button fontSize='sm'>Change Password</Button>
+                    </Center>
+                </Box>
+            </Flex>
+
             <Footer />
 
 
