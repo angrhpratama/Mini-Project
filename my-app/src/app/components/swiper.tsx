@@ -21,6 +21,7 @@ export default function Swipe() {
       slidesPerView={2.5}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
+      
     >
 
       <SwiperSlide>

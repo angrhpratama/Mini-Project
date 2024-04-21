@@ -3,6 +3,7 @@
 import { Box, Center, Divider, HStack, Heading, SimpleGrid, Stack, Text, VStack } from "@chakra-ui/layout"
 import { Button, ButtonGroup, Card, CardBody, CardFooter } from "@chakra-ui/react"
 import Image from "next/image"
+import ReactStars from 'react-stars'
 
 import slide1 from "../assets/hindia.webp"
 import slide2 from "../assets/oasis.jpg"
@@ -32,6 +33,10 @@ function Events() {
                                 Rp. 200.000
                             </Text>
                         </Stack>
+                        <ReactStars
+                                count={5}
+                                size={24}
+                                color2={'#ffd700'} />
                     </CardBody>
                     <Divider />
                     <CardFooter>
@@ -57,6 +62,10 @@ function Events() {
                             <Text color='chocolate' fontSize='2xl'>
                                 Rp. 500.000
                             </Text>
+                            <ReactStars
+                                count={5}
+                                size={24}
+                                color2={'#ffd700'} />
                         </Stack>
                     </CardBody>
                     <Divider />
@@ -86,6 +95,10 @@ function Events() {
                             <Text color='chocolate' fontSize='2xl'>
                                 Rp. 150.000
                             </Text>
+                            <ReactStars
+                                count={5}
+                                size={24}
+                                color2={'#ffd700'} />
                         </Stack>
                     </CardBody>
                     <Divider />
@@ -115,6 +128,10 @@ function Events() {
                             <Text color='chocolate' fontSize='2xl'>
                                 Rp. 100.000
                             </Text>
+                            <ReactStars
+                                count={5}
+                                size={24}
+                                color2={'#ffd700'} />
                         </Stack>
                     </CardBody>
                     <Divider />
@@ -149,6 +166,10 @@ function Events() {
                                 <Text color='chocolate' fontSize='2xl'>
                                     Rp. 100.000
                                 </Text>
+                                <ReactStars
+                                count={5}
+                                size={24}
+                                color2={'#ffd700'} />
                             </VStack>
                         </Stack>
                     </CardBody>
@@ -183,6 +204,10 @@ function Events() {
                                 <Text color='chocolate' fontSize='2xl'>
                                     Rp. 80.000
                                 </Text>
+                                <ReactStars
+                                count={5}
+                                size={24}
+                                color2={'#ffd700'} />
                             </VStack>
                         </Stack>
                     </CardBody>
@@ -218,6 +243,10 @@ function Events() {
                                 <Text color='chocolate' fontSize='2xl'>
                                     Rp. 50.000
                                 </Text>
+                                <ReactStars
+                                count={5}
+                                size={24}
+                                color2={'#ffd700'} />
                             </VStack>
                         </Stack>
                     </CardBody>
@@ -249,6 +278,10 @@ function Events() {
                             <Text color='green' fontSize='2xl'>
                                 Free
                             </Text>
+                            <ReactStars
+                                count={5}
+                                size={24}
+                                color2={'#ffd700'} />
                         </Stack>
                     </CardBody>
                     <Divider />
