@@ -45,15 +45,20 @@ export default function Navbar() {
             Ticket
           </Button>
 
-        <Link href="/create-event">
-          <Button color='white' bgColor='black' variant='outline' >
-            Create Event
-          </Button>
-        </Link>
+          <Link href="/create-event">
+            <Button color='white' bgColor='black' variant='outline' >
+              Create Event
+            </Button>
+          </Link>
 
-          <Button color='white' bgColor='black' variant='outline' >
-            Log in
-          </Button>
+          <Link href='/log-in'>
+            <Button
+              color='white'
+              bgColor='black'
+              variant='outline' >
+              Log in
+            </Button>
+          </Link>
 
 
         </ButtonGroup>
@@ -63,7 +68,7 @@ export default function Navbar() {
         <Divider ml='5' orientation='vertical' />
       </Center>
 
-      <Link href='/profile' >
+      <Link href='/' >
         <Avatar
           ml='5'
           size='sm'

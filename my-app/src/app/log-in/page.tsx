@@ -5,9 +5,10 @@ import logo from '../assets/mp logo.png'
 import { Box, Center, Container, Divider, HStack, Heading, Link, Stack, Text } from '@chakra-ui/layout'
 import { Button, Checkbox, FormControl, FormLabel, Input } from '@chakra-ui/react'
 import Image from 'next/image'
+import { PasswordField } from '../components/passwordField'
 
 
-export default function Profile() {
+export default function Login() {
     return (
 
         <div>
@@ -40,6 +41,7 @@ export default function Profile() {
                                     <FormLabel htmlFor="email">Email</FormLabel>
                                     <Input id="email" type="email" />
                                 </FormControl>
+                                <PasswordField />
                             </Stack>
                             <HStack justify="space-between">
                                 <Checkbox defaultChecked>Remember me</Checkbox>
@@ -49,13 +51,6 @@ export default function Profile() {
                             </HStack>
                             <Stack spacing="6">
                                 <Button>Sign in</Button>
-                                <HStack>
-                                    <Divider />
-                                    <Text textStyle="sm" whiteSpace="nowrap" color="fg.muted">
-                                        or continue with
-                                    </Text>
-                                    <Divider />
-                                </HStack>
                             </Stack>
                         </Stack>
                     </Box>

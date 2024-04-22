@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
-import slide1 from "../assets/hindia.webp"
+import slide1 from "../assets/hindia.jpeg"
 import slide2 from "../assets/oasis.jpg"
 import slide3 from "../assets/1.webp"
 import slide4 from "../assets/2.jpg"
@@ -30,7 +30,9 @@ export default function Swipe() {
           alt='/'
           width={1000}
           height={400}
-          style={{ margin: "30px" }}
+          style={{ margin: "30px", borderRadius: "10px",
+          height: '400px',
+          width: '600px'}}
         />
       </SwiperSlide>
 
@@ -38,7 +40,9 @@ export default function Swipe() {
         <Image src={slide2}
           alt='/'
           width={1700}
-          style={{ margin: "30px" }}
+          style={{ margin: "30px", borderRadius: "10px",
+          height: '400px',
+          width: '600px' }}
         />
       </SwiperSlide>
 
@@ -47,7 +51,9 @@ export default function Swipe() {
           alt='/'
           width={1000}
           height={400}
-          style={{ margin: "30px" }}
+          style={{ margin: "30px", borderRadius: "10px",
+          height: '400px',
+          width: '600px' }}
         />
       </SwiperSlide>
       
@@ -56,7 +62,9 @@ export default function Swipe() {
           alt='/'
           width={1000}
           height={400}
-          style={{ margin: "30px" }}
+          style={{ margin: "30px", borderRadius: "10px",
+          height: '400px',
+          width: '600px' }}
         />
       </SwiperSlide>
 
@@ -65,7 +73,9 @@ export default function Swipe() {
           alt='/'
           width={1000}
           height={400}
-          style={{ margin: "30px" }}
+          style={{ margin: "30px", borderRadius: "10px",
+          height: '400px',
+          width: '600px' }}
         />
       </SwiperSlide>
       
@@ -74,7 +84,9 @@ export default function Swipe() {
           alt='/'
           width={1000}
           height={400}
-          style={{ margin: "30px" }}
+          style={{ margin: "30px", borderRadius: "10px",
+          height: '400px',
+          width: '600px' }}
         />
       </SwiperSlide>
       
@@ -83,7 +95,9 @@ export default function Swipe() {
           alt='/'
           width={1000}
           height={400}
-          style={{ margin: "30px" }}
+          style={{ margin: "30px", borderRadius: "10px",
+          height: '400px',
+          width: '600px'}}
         />
       </SwiperSlide>
 
@@ -92,7 +106,9 @@ export default function Swipe() {
           alt='/'
           width={1000}
           height={400}
-          style={{ margin: "30px" }}
+          style={{ margin: "30px", borderRadius: "10px",
+          height: '400px',
+          width: '600px' }}
         />
       </SwiperSlide>
 
